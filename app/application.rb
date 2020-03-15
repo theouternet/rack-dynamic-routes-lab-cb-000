@@ -12,6 +12,8 @@ class Application
       
       if @@items.detect(item_name)
         resp.write item_name.price
+      else 
+        
       end 
       
       resp.write "You requested the songs"
