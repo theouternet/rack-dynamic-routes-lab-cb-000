@@ -13,8 +13,8 @@ class Application
       if @@items.detect(item_name)
         resp.write item_name.price
       else 
-      resp.write "Route not found"
-      resp.status = 404
+      resp.write "Item not found"
+      resp.status = 400
       end 
       
       resp.write "You requested the songs"
